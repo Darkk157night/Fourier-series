@@ -16,6 +16,7 @@ function setup() {
   slidertime.position(20,80);
 
   select = createSelect();
+  select.position(300,50);
   select.option("sawtooth");
   select.option("sqaure");
   select.option("triangle");
