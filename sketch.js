@@ -9,8 +9,11 @@ let slidertime;
 function setup() {
   createCanvas(1200, 700);
   slider = createSlider(1, 100, 1);
+  slider.position(20,20);
   sliderradii = createSlider(10,50,1);
+  sliderradii.position(20,50);
   slidertime = createSlider(1,100,1);
+  slidertime.position(20,80);
 
   select = createSelect();
   select.option("sawtooth");
@@ -23,7 +26,17 @@ function draw() {
   console.log("Iterations = "+slider.value());
   console.log("radius = "+sliderradii.value());
   console.log("Frequency = "+slidertime.value());
+  
   background(0);
+  text('n-th value', slider.x*2 + slider.width, 35);
+  text('amplitide', sliderradii.x*2 +sliderradii.width,65);
+  text('Frequency',slidertime.x*2+slidertime.width,95);
+  text('type of wave',290 + select.width,35);
+  text('current values', 450+select.width,35);
+  text('n-th value = '+slider.value(),450+select.width,65);
+  text('Amplitude = '+sliderradii.value(),450+select.width,95);
+  text('Frequency = '+slidertime.value()/100,450+select.width,125);
+  
   translate(150, 400);
   let wavetype = select.value();
 
@@ -93,7 +106,3 @@ function draw() {
   }
 }
 
-function customwave(){
-  radius = sliderradii.value() * 0;
-  n = i*2 +1;
-}
