@@ -5,3 +5,5 @@ The fourier series the mathematical concept of representing a complex periodic f
 This code allows us to visualize the fourier using epicycles by using the p5.js library to draw the function.
 
 The code has 3 built in function for square, sawtooth and triangular wave. In future more wave forms might be added.
+
+$\sum$
