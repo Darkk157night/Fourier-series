@@ -7,7 +7,7 @@ let sliderradii;
 let slidertime;
 
 function setup() {
-  createCanvas(1200, 700);
+  createCanvas(windowWidth, windowHeight);
   slider = createSlider(1, 100, 1);
   slider.position(20,20);
   sliderradii = createSlider(10,50,1);
